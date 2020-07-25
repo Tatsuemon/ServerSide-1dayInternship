@@ -32,4 +32,5 @@ ActiveRecord::Schema.define(version: 2020_07_18_031240) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "cards", "people"
 end

@@ -1,4 +1,5 @@
 module CalculationTitleScore
+  extend ActiveSupport::Concern
   # 職業の近さからスコアを計算する
   # スコアが高ければその職業の類似度が高い
   TITLE_KIND = {
