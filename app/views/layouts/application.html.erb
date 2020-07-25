@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>App</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>Seven | 名刺管理アプリ</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.10.0/css/all.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css' type='text/css' media='all' />
+  <link rel='stylesheet' href='https://unpkg.com/bulma@0.8.2/css/bulma.min.css' />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <%= render 'layouts/header' %>
+  <%= yield %>
+</body>
+
 </html>

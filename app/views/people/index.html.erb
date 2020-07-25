@@ -1,0 +1,27 @@
+<div class='container'>
+  <%= render 'layouts/search_form' %>
+  <% @people.each do |person| %>
+    <div class='columns features'>
+      <div class='column is-12'>
+        <% person.cards.each_with_index do |card, i| %>
+          <div class="card is-shady <%= i == 0 ? 'main-card' : '' %>">
+            <div class='card-image'>
+              <%= image_tag card_path(card.id) %>
+            </div>
+            <div class='card-content'>
+              <div class='content'>
+                <h4><%= card.name %></h4>
+                <span><%= card.organization %> <%= card.department %></span>
+              </div>
+              <% if i == 0 && person.cards.length > 1 %>
+                <div class='card-count'>
+                  他に<%= person.cards.length - 1 %>件名刺があります</div>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class='person-spacer'></div>
+  <% end %>
+</div>

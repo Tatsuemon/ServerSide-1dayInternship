@@ -1,0 +1,165 @@
+@import './variables';
+
+html,
+body {
+  background-color: $background_color;
+}
+
+img {
+  height: 100%;
+}
+
+.hero-body .title {
+  color: $white_color;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero-head.is-eight {
+  background-color: $primary_color;
+
+  .navbar-item {
+    color: $white_color;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.button.is-primary {
+  background-color: $primary_color;
+  &:hover {
+    background-color: $primary_color;
+  }
+}
+
+.search-form-wrapper {
+  margin: 20px auto;
+  display: flex;
+
+  .search-form {
+    width: 62.5%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .select-drop {
+    border: 0;
+    height: 100%;
+  }
+}
+
+.columns {
+  .column {
+    .card {
+      display: flex;
+      width: 62.5%;
+      height: 184px;
+      margin: 20px auto;
+      display: none;
+    }
+
+    .main-card {
+      display: flex;
+      cursor: pointer;
+    }
+  }
+}
+
+.person-spacer {
+  height: 1px;
+  width: 80%;
+  margin: 0 auto;
+  background: $gray_color;
+}
+
+.hero-body .subtitle {
+  color: hsl(192, 17%, 99%) !important;
+  padding-top: 2rem;
+  line-height: 1.5;
+}
+
+.features {
+  padding-bottom: 1rem 0;
+}
+
+.card-content {
+  width: 65%;
+
+  .content {
+    font-size: 14px;
+    color: #595959;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 45px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+.is-shady {
+  animation: flyintoright 0.4s backwards;
+  background: $white_color;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.is-shady:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, .1), 0 6px 6px rgba(0, 0, 0, .1);
+}
+
+.card-image {
+  width: 294px;
+  height: 184px;
+
+  img {
+    width: 294px;
+  }
+}
+
+.card-count {
+  color: $secondary_color;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+.visible {
+  display: flex !important;
+  opacity: .7;
+  transform: translateX(50px);
+}
+
+.unvisible {
+  display: none !important;
+}
+
+.size_normal {
+  height: 16px;
+  width: 16px;
+}
+
+.grey1 {
+  color: $secondary_color;
+  border: 1px solid $secondary_color;
+}
+
+.merge-button {
+  color: $white_color;
+
+  &:hover {
+    color: $white_color;
+  }
+}
